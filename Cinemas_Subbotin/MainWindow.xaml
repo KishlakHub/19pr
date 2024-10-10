@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cinemas_Subbotin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+            Title="Кинотеатры. Субботин" Height="450" Width="800" MinHeight="450" MinWidth="800">
     <Grid>
-        
+        <Frame x:Name="frame"  NavigationUIVisibility="Hidden" Margin="10,40,10,10"/>
+        <Button x:Name="kinoteatr" Click="OpenKino" Content="Кинотеатры" Height="25" Margin="10,10,0,0" Background="#FF32BEA6" Foreground="#FF3A3A38" BorderBrush="#FF32BEA6" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" />
+        <Button x:Name="afisha" Click="OpenAfisha" Content="Афиши" Height="25" Margin="115,10,0,0" Background="#FF32BEA6" Foreground="#FF3A3A38" BorderBrush="#FF32BEA6" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" />
     </Grid>
 </Window>
