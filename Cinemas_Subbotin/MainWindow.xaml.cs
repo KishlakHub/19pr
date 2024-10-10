@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Cinemas_Subbotin.Models;
+using Cinemas_Subbotin.Classes;
+
 
 namespace Cinemas_Subbotin
 {
@@ -20,9 +23,23 @@ namespace Cinemas_Subbotin
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow init;
+
         public MainWindow()
         {
             InitializeComponent();
+            OpenPage(new Pages.Kinoteatr.Main());
+            init = this;
         }
+        public void OpenPage(Page Page)
+        {
+            frame.Navigate(Page);
+        }
+
+        private void OpenKino(object sender, RoutedEventArgs e) =>
+            OpenPage(new Pages.Kinoteatr.Main());
+
+        private void OpenAfisha(object sender, RoutedEventArgs e) =>
+            OpenPage(new Pages.Afisha.Main());
     }
 }
