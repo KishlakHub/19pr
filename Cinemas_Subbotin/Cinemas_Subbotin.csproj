@@ -65,6 +65,7 @@
     </Compile>
     <Compile Include="Classes\AfishaContext.cs" />
     <Compile Include="Classes\Common\Connection.cs" />
+    <Compile Include="Classes\EqualityComparer.cs" />
     <Compile Include="Classes\KInoteatrContext.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -72,6 +73,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Afisha.cs" />
+    <Compile Include="Models\Kinoteatr.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -96,6 +99,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\afisha.png" />
+    <Resource Include="Images\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
