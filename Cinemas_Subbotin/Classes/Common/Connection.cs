@@ -9,7 +9,7 @@ namespace Cinemas_Subbotin.Classes.Common
 {
     public class Connection
     {
-        public static readonly string config = "server=127.0.0.1;port=3307;uid=root;pwd=;database=kino;";
+        public static readonly string config = "server=127.0.0.1;port=3306;uid=root;pwd=;database=kino;";
         public static MySqlConnection OpenConnection()
         {
             MySqlConnection connection = new MySqlConnection(config);
